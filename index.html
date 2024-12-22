@@ -143,7 +143,7 @@
                   <li class="icon-fon">
                     <a class="icon-link" href="">
                       <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                        <use href="./images/icons.svg#icon-twitter-11"></use>
                       </svg>
                     </a>
                   </li>
@@ -186,7 +186,7 @@
                   <li class="icon-fon">
                     <a class="icon-link" href="">
                       <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                        <use href="./images/icons.svg#icon-twitter-11"></use>
                       </svg>
                     </a>
                   </li>
@@ -229,7 +229,7 @@
                   <li class="icon-fon">
                     <a class="icon-link" href="">
                       <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                        <use href="./images/icons.svg#icon-twitter-11"></use>
                       </svg>
                     </a>
                   </li>
@@ -272,7 +272,7 @@
                   <li class="icon-fon">
                     <a class="icon-link" href="">
                       <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                        <use href="./images/icons.svg#icon-twitter-11"></use>
                       </svg>
                     </a>
                   </li>
@@ -450,7 +450,7 @@
             <li class="icon-fon">
               <a class="icon-link" href="">
                 <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                  <use href="./images/icons.svg#icon-twitter-11"></use>
                 </svg>
               </a>
             </li>
@@ -470,7 +470,112 @@
             </li>
           </ul>
         </div>
+        <div class="container-form">
+          <form class="subscribe-form" name="subscribe" autocomplete="off">
+            <label class="email-form" for="email">
+              Subscribe
+              <div class="inp-btn">
+                <input
+                  class="inp-email"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                />
+
+                <button class="btn-form-subscibe" type="submit">
+                  Subscribe
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <form class="info-back" name="info-back" autocomplete="off">
+          <button class="close-btn" type="submit">
+            <svg class="iconbtn" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+
+          <h2 class="title-form">
+            Leave your contacts and we will call you back
+          </h2>
+          <div class="input-form">
+            <div>
+              <label for="name" class="name">
+                Name
+                <input
+                  class="inp-name"
+                  type="text"
+                  required
+                  id="name"
+                  autofocus
+                />
+                <svg class="icon-form" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div>
+              <label for="phone" class="phone">
+                Phone
+                <input class="inp-phone" type="tel" required id="phone" />
+                <svg class="icon-form" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div>
+              <label for="mail" class="mail">
+                E-mail
+                <input class="inp-mail" type="email" required id="mail" />
+                <svg class="icon-form" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div>
+              <label for="comment" class="comment">
+                Comment
+                <textarea
+                  class="area-comment"
+                  name="area-comment"
+                  rows="5"
+                  placeholder="Text input"
+                  id="comment"
+                ></textarea>
+              </label>
+            </div>
+          </div>
+
+          <div class="licen">
+            <label class="licen-label" for="realcheckbox">
+              <input class="real-checkbox" type="checkbox" id="realcheckbox" />
+              <spam class="decor-checkbox">
+                <svg class="decor-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-click"></use>
+                </svg>
+              </spam>
+
+              I accept the terms and conditions of the&nbsp;
+              <a class="privacy" href=""> Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="send-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
