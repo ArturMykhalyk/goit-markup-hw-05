@@ -471,105 +471,104 @@
           </ul>
         </div>
         <div class="container-form">
-          <form class="subscribe-form" name="subscribe" autocomplete="off">
-            <div class="email-form">
-              Subscribe
-              <div class="inp-btn">
-                <input
-                  class="inp-email"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="E-mail"
-                />
+          <p class="email-form">Subscribe</p>
 
-                <button class="btn-form-subscibe" type="submit">
-                  Subscribe<svg class="icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
+          <form class="subscribe-form" name="subscribe" autocomplete="off">
+            <label class="inp-btn">
+              <input
+                class="inp-email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button class="btn-form-subscibe" type="submit">
+              Subscribe<svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
+        <button class="close-btn" type="button">
+          <svg class="iconbtn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+
+        <p class="title-form">Leave your contacts and we will call you back</p>
+
         <form class="info-back" name="info-back" autocomplete="off">
-          <button class="close-btn" type="submit">
-            <svg class="iconbtn" width="8" height="8">
-              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
-            </svg>
-          </button>
-
-          <h2 class="title-form">
-            Leave your contacts and we will call you back
-          </h2>
-          <div class="input-form">
-            <div>
-              <label for="name" class="name">
-                Name
-                <input
-                  class="inp-name"
-                  type="text"
-                  required
-                  id="name"
-                  autofocus
-                />
-                <svg class="icon-form" width="18" height="24">
-                  <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-                </svg>
-              </label>
-            </div>
-
-            <div>
-              <label for="phone" class="phone">
-                Phone
-                <input class="inp-phone" type="tel" required id="phone" />
-                <svg class="icon-form" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-                </svg>
-              </label>
-            </div>
-
-            <div>
-              <label for="mail" class="mail">
-                E-mail
-                <input class="inp-mail" type="email" required id="mail" />
-                <svg class="icon-form" width="18" height="24">
-                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-                </svg>
-              </label>
-            </div>
-
-            <div>
-              <label for="comment" class="comment">
-                Comment
-                <textarea
-                  class="area-comment"
-                  name="area-comment"
-                  rows="5"
-                  placeholder="Text input"
-                  id="comment"
-                ></textarea>
-              </label>
+          <div class="form-first">
+            <label for="user-name" class="form-label"> Name </label>
+            <div class="form-input">
+              <input
+                class="inp-name"
+                id="user-name"
+                name="user-name"
+                type="text"
+              />
+              <svg class="icon-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
             </div>
           </div>
 
+          <div class="form-first">
+            <label for="phone" class="form-label"> Phone</label>
+            <div class="form-input">
+              <input class="inp-name" type="tel" required id="phone" />
+
+              <svg class="icon-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-first">
+            <label for="mail" class="form-label"> E-mail </label>
+            <div class="form-input">
+              <input class="inp-name" type="email" required id="mail" />
+              <svg class="icon-form" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="com-area">
+            <label for="user-comment" class="form-label">
+              Comment
+              <textarea
+                class="area-comment"
+                name="user-comment"
+                rows="5"
+                placeholder="Text input"
+                id="user-comment"
+              ></textarea>
+            </label>
+          </div>
+
           <div class="licen">
-            <div class="licen-label">
-              <input class="real-checkbox" type="checkbox" id="realcheckbox" />
-              <div class="decor-checkbox">
+            <label for="user-privacy" class="licen-label">
+              <input
+                id="user-privacy"
+                class="visually-hidden"
+                type="checkbox"
+                value="true"
+                name="user-privacy"
+              />
+              <span class="decor-checkbox">
                 <svg class="decor-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg>
-              </div>
-
-              I accept the terms and conditions of the&nbsp;
+              </span>
+              I accept the terms and conditions of the
               <a class="privacy" href=""> Privacy Policy</a>
-            </div>
+            </label>
           </div>
 
           <button class="send-btn" type="submit">Send</button>
